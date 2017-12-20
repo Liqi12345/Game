@@ -7,7 +7,7 @@
 class Code{
 	constructor(){
 		this.char = [['A','img/a.png'],['B','img/b.png'],['C','img/c.png'],['D','img/d.png'],['E','img/e.png'],
-		['F','img/f.png'],['G','img/g.png'],['H','img/eh.png'],['I','img/i.png'],['J','img/j.png'],
+		['F','img/f.png'],['G','img/g.png'],['H','img/e.png'],['I','img/i.png'],['J','img/j.png'],
 		['K','img/k.png'],['L','img/l.png'],['M','img/m.png'],['N','img/n.png'],['O','img/o.png'],
 		['P','img/p.png'],['Q','img/q.png'],['R','img/r.png'],['S','img/s.png'],['T','img/t.png'],
 		['U','img/u.png'],['V','img/v.png'],['W','img/w.png'],['X','img/x.png'],['Y','img/y.png']];//字母表
