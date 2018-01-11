@@ -44,6 +44,11 @@ body{
     background: url('../img/pic1.png') 0px -210px;
     background-size: 556px;
 }
+/* .begin{
+	width: 300px;
+	height: 300px;
+	position: fixed;
+} */
 .menu{
 	width: 50px;
 	position: fixed;

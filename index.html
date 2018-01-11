@@ -9,24 +9,26 @@
 <body>
 	<div class="fenshu"><span>0</span></div>
 	<div class="sm"><span>5</span></div>
-	<div class="jindu"></div>
+	<!--<div class="jindu"></div>-->
+	<!-- <div class="begin"></div> -->
 	<ul class="menu">
-		<li class="play"></li>
-		<li class="pause"></li>
-		<li class="reload"></li>
+		<li class="play" style="cursor:pointer;"></li>
+		<li class="pause" style="cursor:pointer;"></li>
+		<li class="reload" style="cursor:pointer;"></li>
 		<li></li>
 		<li></li>
-		<li></li>
+		<li class="mscBtn ban" style="cursor:pointer;"></li>
 		<li></li>
 		<li></li>
 		<li></li>
 	</ul>
+	<audio id="bgMusic" src="music/Sunburst.mp3" loop="loop" autoplay="autoplay"></audio>
 </body>
 </html>
 <script src="index.js"></script>
 <script>
 	$(function(){
 		let code = new Code();
-		code.start();
+		 code.start();
 	})
 </script>

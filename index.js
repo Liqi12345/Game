@@ -13,12 +13,12 @@ class Code{
 		['U','img/u.png'],['V','img/v.png'],['W','img/w.png'],['X','img/x.png'],['Y','img/y.png']];//字母表
 		this.length = 5;
 		this.current = [];
-		this.speed = 0.5;
+		this.speed = 3;
 		this.position = [];
 		this.play = $('li')[0];
 		this.pause = $('li')[1];
 		this.reload = $('li')[2];
-		console.log(this.play,this.pause)
+        this.music = $('li')[5];
 		this.fenObj = document.querySelector('.fenshu>span');
 		this.smObj = document.querySelector('.sm>span');
 		this.fen = 0;
@@ -100,22 +100,31 @@ class Code{
 				}
 			}
 		}
-		let flags = true;	
+		let flags = true;
+        let bgMusic = document.getElementById('bgMusic');console.log(bgMusic);
 		that.play.onclick = function(){
 			if(flags == false){
 				that.t = setInterval(move,100)
 				flags = true;
+                bgMusic.play();
 			}
 		}
 		that.pause.onclick = function(){
 			if(flags == true){
 				clearInterval(that.t)
 				flags = false;
+                bgMusic.pause();
 			}
 		}
-
 		that.reload.onclick = function(){
 			history.go(0);
+		}
+		that.music.onclick = function(){
+            if(bgMusic.paused){
+            	bgMusic.play();
+            }else{
+            	bgMusic.pause();
+			}
 		}
 	};
 	keys(){
